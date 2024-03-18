@@ -1,16 +1,16 @@
 export default function Home() {
   return (
-    <div>
+    <div className="text-gray-600">
       {/* nav start */}
       <div>
         <nav>
           <div>
-            <h1>
+            <h1 className="font-bold uppercase">
               <a href="/">Food Ninja</a>
             </h1>
           </div>
           <ul>
-            <li>
+            <li className="text-gray-700 font-bold">
               <a href="#">
                 <span>Home</span>
               </a>
@@ -35,11 +35,11 @@ export default function Home() {
           <a href="#">Sign up</a>
         </div>
         <header>
-          <h2>Recipes</h2>
-          <h3>For Ninjas</h3>
+          <h2 className="text-gray-700 text-6xl font-semibold">Recipes</h2>
+          <h3 className="text-2xl font-semibold">For Ninjas</h3>
         </header>
         <div>
-          <h4>Latest Recipes</h4>
+          <h4 className="font-bold">Latest Recipes</h4>
         </div>
         <div>
           <div>
@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <h4>Most Popular</h4>
+        <h4 className="font-bold">Most Popular</h4>
 
         <div>{/* Card go here */}</div>
         <div>
