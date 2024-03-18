@@ -31,8 +31,12 @@ export default function Home() {
       {/* nav end */}
       <main className="px-16 py-6">
         <div>
-          <a href="#">Log in</a>
-          <a href="#">Sign up</a>
+          <a href="# " className="text-primary">
+            Log in
+          </a>
+          <a href="# " className="text-primary">
+            Sign up
+          </a>
         </div>
         <header>
           <h2 className="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -58,7 +62,7 @@ export default function Home() {
 
         <div className="mt-8">{/* Card go here */}</div>
         <div>
-          <div>Load more</div>
+          <div className="bg-secondary-100 text-secondary-200">Load more</div>
         </div>
       </main>
     </div>
