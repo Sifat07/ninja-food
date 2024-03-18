@@ -5,7 +5,7 @@ export default function Home() {
       <div>
         <nav>
           <div>
-            <h1 className="font-bold uppercase">
+            <h1 className="font-bold uppercase p-4 border-b border-gray-100">
               <a href="/">Food Ninja</a>
             </h1>
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
         </nav>
       </div>
       {/* nav end */}
-      <main>
+      <main className="px-16 py-6">
         <div>
           <a href="#">Log in</a>
           <a href="#">Sign up</a>
@@ -39,9 +39,11 @@ export default function Home() {
           <h3 className="text-2xl font-semibold">For Ninjas</h3>
         </header>
         <div>
-          <h4 className="font-bold">Latest Recipes</h4>
+          <h4 className="font-bold mt-12 pb-2 border-b border-gray-300">
+            Latest Recipes
+          </h4>
         </div>
-        <div>
+        <div className="mt-8">
           <div>
             <img src="/img/stew.jpg" alt="stew" />
             <div>
@@ -50,9 +52,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <h4 className="font-bold">Most Popular</h4>
+        <h4 className="font-bold mt-12 pb-2 border-b border-gray-300">
+          Most Popular
+        </h4>
 
-        <div>{/* Card go here */}</div>
+        <div className="mt-8">{/* Card go here */}</div>
         <div>
           <div>Load more</div>
         </div>
