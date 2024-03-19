@@ -6,7 +6,9 @@ export default function Home() {
         <nav>
           <div>
             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-              <a href="/">Food Ninja</a>
+              <a href="/" className="hover:text-gray-700">
+                Food Ninja
+              </a>
             </h1>
           </div>
           <ul>
@@ -73,10 +75,16 @@ export default function Home() {
       {/* nav end */}
       <main className=" px-16 py-6 bg-gray-100 md:col-span-2">
         <div className="flex justify-center md:justify-end align-middle gap-2">
-          <a href="#" className="btn text-primary border-primary md:border-2">
+          <a
+            href="#"
+            className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white"
+          >
             Log in
           </a>
-          <a href="#" className="btn text-primary border-primary md:border-2">
+          <a
+            href="#"
+            className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white"
+          >
             Sign up
           </a>
         </div>
@@ -90,7 +98,7 @@ export default function Home() {
           </h4>
         </div>
         <div className="mt-8 grid lg:grid-cols-3 gap-10 ">
-          <div className="card">
+          <div className="card hover:shadow-lg">
             <img
               src="/img/stew.jpg"
               alt="stew"
@@ -120,7 +128,7 @@ export default function Home() {
               <span>25 mins</span>
             </div>
           </div>
-          <div className="card">
+          <div className="card hover:shadow-lg">
             <img
               src="/img/noodles.jpg"
               alt="noodles"
@@ -150,7 +158,7 @@ export default function Home() {
               <span>25 mins</span>
             </div>
           </div>
-          <div className="card">
+          <div className="card hover:shadow-lg">
             <img
               src="/img/curry.jpg"
               alt="curry"
@@ -187,7 +195,7 @@ export default function Home() {
 
         <div className="mt-8">{/* Card go here */}</div>
         <div className="flex justify-center">
-          <div className="btn bg-secondary-100 text-secondary-200">
+          <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">
             Load more
           </div>
         </div>
