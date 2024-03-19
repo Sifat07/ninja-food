@@ -1,19 +1,63 @@
+"use client";
+import React from "react";
+
 export default function Home() {
+  const [showMenu, setShowMenu] = React.useState(false);
+
+  const handleMenu = () => {
+    if (showMenu) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  };
+
+  const openMenu = () => {
+    setShowMenu(true);
+  };
+
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
   return (
     <div className="text-gray-600 grid md:grid-cols-3">
       {/* nav start */}
-      <div className="md:col-span-1">
-        <nav>
-          <div>
+      <div className="md:col-span-1 md:flex md:justify-end  ">
+        <nav className="text-right">
+          <div className="flex justify-between items-center">
             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
               <a href="/" className="hover:text-gray-700">
                 Food Ninja
               </a>
             </h1>
+            <div className="px-4 cursor-pointer md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-5"
+                onClick={() => handleMenu()}
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </div>
-          <ul>
-            <li className="text-gray-700 font-bold">
-              <a href="#">
+          <ul
+            className={
+              showMenu
+                ? "text-sm mt-6 md:block "
+                : "text-sm mt-6 hidden md:block "
+            }
+          >
+            <li className="text-gray-700 font-bold py-1 border-r-4 border-primary">
+              <a href="#" className="px-4 flex justify-end">
                 <span>Home</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +65,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="w-5 inline-block"
+                  className="w-5 ml-2"
                 >
                   <path
                     stroke-linecap="round"
@@ -31,8 +75,11 @@ export default function Home() {
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li className="py-1">
+              <a
+                href="#"
+                className="px-4 flex justify-end border-r-4 border-transparent"
+              >
                 <span>About</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +87,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="w-5 inline-block"
+                  className="w-5 ml-2"
                 >
                   <path
                     stroke-linecap="round"
@@ -50,8 +97,11 @@ export default function Home() {
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li className="py-1">
+              <a
+                href="#"
+                className="px-4 flex justify-end border-r-4 border-transparent"
+              >
                 <span>Contact</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +109,7 @@ export default function Home() {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="w-5 inline-block"
+                  className="w-5 ml-2"
                 >
                   <path
                     stroke-linecap="round"
