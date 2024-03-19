@@ -29,7 +29,7 @@ export default function Home() {
         </nav>
       </div>
       {/* nav end */}
-      <main className="px-16 py-6">
+      <main className="px-16 py-6 bg-gray-100">
         <div className="flex justify-center md:justify-end align-middle gap-2">
           <a href="#" className="text-primary">
             Log in
@@ -48,11 +48,17 @@ export default function Home() {
           </h4>
         </div>
         <div className="mt-8">
-          <div>
-            <img src="/img/stew.jpg" alt="stew" />
-            <div>
-              <span>5 Bean Chilli Stew</span>
-              <span>Recipe by Mario</span>
+          <div className="bg-white rounded overflow-hidden shadow-md">
+            <img
+              src="/img/stew.jpg"
+              alt="stew"
+              className="w-full h-32 sm:h-48 object-cover"
+            />
+            <div className="m-4">
+              <span className="font-bold">5 Bean Chilli Stew</span>
+              <span className="block text-gray-500 text-sm">
+                Recipe by Mario
+              </span>
             </div>
           </div>
         </div>
