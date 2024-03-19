@@ -30,11 +30,11 @@ export default function Home() {
       </div>
       {/* nav end */}
       <main className="px-16 py-6">
-        <div>
-          <a href="# " className="text-primary">
+        <div className="flex justify-end align-middle gap-2">
+          <a href="#" className="text-primary">
             Log in
           </a>
-          <a href="# " className="text-primary">
+          <a href="#" className="text-primary">
             Sign up
           </a>
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
         </h4>
 
         <div className="mt-8">{/* Card go here */}</div>
-        <div>
+        <div className="flex justify-center">
           <div className="bg-secondary-100 text-secondary-200">Load more</div>
         </div>
       </main>
