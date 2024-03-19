@@ -48,7 +48,7 @@ export default function Home() {
           </h4>
         </div>
         <div className="mt-8">
-          <div className="bg-white rounded overflow-hidden shadow-md relative">
+          <div className="card">
             <img
               src="/img/stew.jpg"
               alt="stew"
@@ -60,7 +60,39 @@ export default function Home() {
                 Recipe by Mario
               </span>
             </div>
-            <div className="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+            <div className="badge">
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div className="card">
+            <img
+              src="/img/noodles.jpg"
+              alt="noodles"
+              className="w-full h-32 sm:h-48 object-cover"
+            />
+            <div className="m-4">
+              <span className="font-bold">Veg Noodles</span>
+              <span className="block text-gray-500 text-sm">
+                Recipe by Mario
+              </span>
+            </div>
+            <div className="badge">
+              <span>25 mins</span>
+            </div>
+          </div>
+          <div className="card">
+            <img
+              src="/img/curry.jpg"
+              alt="curry"
+              className="w-full h-32 sm:h-48 object-cover"
+            />
+            <div className="m-4">
+              <span className="font-bold">Tofu Curry</span>
+              <span className="block text-gray-500 text-sm">
+                Recipe by Mario
+              </span>
+            </div>
+            <div className="badge">
               <span>25 mins</span>
             </div>
           </div>
