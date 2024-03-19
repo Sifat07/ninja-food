@@ -48,7 +48,7 @@ export default function Home() {
           </h4>
         </div>
         <div className="mt-8">
-          <div className="bg-white rounded overflow-hidden shadow-md">
+          <div className="bg-white rounded overflow-hidden shadow-md relative">
             <img
               src="/img/stew.jpg"
               alt="stew"
@@ -59,6 +59,9 @@ export default function Home() {
               <span className="block text-gray-500 text-sm">
                 Recipe by Mario
               </span>
+            </div>
+            <div className="bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+              <span>25 mins</span>
             </div>
           </div>
         </div>
