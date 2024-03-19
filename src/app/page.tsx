@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="text-gray-600">
+    <div className="text-gray-600 grid md:grid-cols-3">
       {/* nav start */}
-      <div>
+      <div className="md:col-span-1">
         <nav>
           <div>
             <h1 className="font-bold uppercase p-4 border-b border-gray-100">
@@ -29,7 +29,7 @@ export default function Home() {
         </nav>
       </div>
       {/* nav end */}
-      <main className="px-16 py-6 bg-gray-100">
+      <main className=" px-16 py-6 bg-gray-100 md:col-span-2">
         <div className="flex justify-center md:justify-end align-middle gap-2">
           <a href="#" className="text-primary">
             Log in
@@ -47,7 +47,7 @@ export default function Home() {
             Latest Recipes
           </h4>
         </div>
-        <div className="mt-8">
+        <div className="mt-8 grid lg:grid-cols-3 gap-10 ">
           <div className="card">
             <img
               src="/img/stew.jpg"
