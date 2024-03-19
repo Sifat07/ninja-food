@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       {/* nav end */}
       <main className="px-16 py-6">
-        <div className="flex justify-end align-middle gap-2">
+        <div className="flex justify-center md:justify-end align-middle gap-2">
           <a href="#" className="text-primary">
             Log in
           </a>
