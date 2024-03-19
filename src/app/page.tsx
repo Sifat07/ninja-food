@@ -31,10 +31,10 @@ export default function Home() {
       {/* nav end */}
       <main className=" px-16 py-6 bg-gray-100 md:col-span-2">
         <div className="flex justify-center md:justify-end align-middle gap-2">
-          <a href="#" className="text-primary">
+          <a href="#" className="btn text-primary border-primary md:border-2">
             Log in
           </a>
-          <a href="#" className="text-primary">
+          <a href="#" className="btn text-primary border-primary md:border-2">
             Sign up
           </a>
         </div>
@@ -103,7 +103,9 @@ export default function Home() {
 
         <div className="mt-8">{/* Card go here */}</div>
         <div className="flex justify-center">
-          <div className="bg-secondary-100 text-secondary-200">Load more</div>
+          <div className="btn bg-secondary-100 text-secondary-200">
+            Load more
+          </div>
         </div>
       </main>
     </div>
