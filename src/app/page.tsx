@@ -21,16 +21,19 @@ export default function Home() {
   };
 
   return (
-    <div className="text-gray-600 grid md:grid-cols-3">
+    <div className="text-slate-100 grid md:grid-cols-9 h-screen">
       {/* nav start */}
-      <div className="md:col-span-1 md:flex md:justify-end  ">
+      <div className="md:col-span-1 md:flex md:justify-end bg-neutral-800 ">
         <nav className="text-right">
           <div className="flex justify-between items-center">
-            <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-              <a href="/" className="hover:text-gray-700">
-                Food Ninja
-              </a>
-            </h1>
+            <div className="flex self-stretch grow border-b border-primary">
+              <h1 className="font-bold uppercase p-4 ">
+                <a href="/" className="hover:text-primary">
+                  Food Ninja
+                </a>
+              </h1>
+            </div>
+
             <div className="px-4 cursor-pointer md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +59,7 @@ export default function Home() {
                 : "text-sm mt-6 hidden md:block "
             }
           >
-            <li className="text-gray-700 font-bold py-1 border-r-4 border-primary">
+            <li className="text-primary font-bold py-1 border-r-4 border-primary">
               <a href="#" className="px-4 flex justify-end">
                 <span>Home</span>
                 <svg
@@ -123,7 +126,7 @@ export default function Home() {
         </nav>
       </div>
       {/* nav end */}
-      <main className=" px-16 py-6 bg-gray-100 md:col-span-2">
+      <main className="px-16 py-6 bg-gray-100 md:col-span-8">
         <div className="flex justify-center md:justify-end align-middle gap-2">
           <a
             href="#"
